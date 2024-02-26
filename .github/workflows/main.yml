@@ -8,14 +8,15 @@ jobs:
   Compile:
     name: Compile
     runs-on: ubuntu-latest
-    container:
-      image: postgres:latest
-      env:
-        POSTGRES_USER: postgres
-        POSTGRES_PASSWORD: postgres
-        POSTGRES_DB: test
-      ports:
-        - 5432:5432
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test
+        ports:
+          - 5432:5432
     steps:
       - name: Setup Java 21
         uses: actions/setup-java@v4.0.0
