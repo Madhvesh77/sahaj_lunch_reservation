@@ -1,5 +1,3 @@
-package gkl.exercise
-
 import gkl.exercise.entities.EmployeeEntity
 import gkl.exercise.models.Employee
 import gkl.exercise.repository.EmployeeRepository

@@ -88,4 +88,8 @@ tasks.withType(Test) {
     }
 }
 
+sourceSets {
+    test.java.srcDirs += 'src/Unit/Kotlin'
+}
+
 
