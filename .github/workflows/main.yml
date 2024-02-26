@@ -15,7 +15,8 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Print Hello
-        run: echo $Hello
-        env:
-          Hello: 'Hello'
+      - name: Setup docker-compose
+        uses: KengoTODA/actions-setup-docker-compose@v1.0.9
+        with:
+          version: v2.23.3
+
