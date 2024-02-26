@@ -80,4 +80,12 @@ tasks.named("dockerfileNative") {
     jdkVersion = "21"
 }
 
+tasks.withType(Test) {
+    testLogging {
+        exceptionFormat "full"
+        events "started", "skipped", "passed", "failed"
+        showStandardStreams true
+    }
+}
+
 
