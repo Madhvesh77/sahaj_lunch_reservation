@@ -23,7 +23,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Build
-        run: ./gradlew tests
+        run: ./gradlew test
 
 
 
