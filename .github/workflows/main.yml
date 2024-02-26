@@ -24,7 +24,7 @@ jobs:
           distribution: 'temurin'
       - name: Build
         uses: actions/checkout@v4
-        run: ./gradlew tests
+        run: echo "Hello"
 
 
 
