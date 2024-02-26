@@ -23,7 +23,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Build
-        uses: actions/checkout@v4
         run: echo "Hello"
 
 
